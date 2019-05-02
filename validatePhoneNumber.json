@@ -1,0 +1,9 @@
+[
+ { "phoneNumber": "O44 668 18 00 ", "countryCode": "CH", "expectedStatus": "200"},
+ { "phoneNumber": "+41 44 668 18 00", "countryCode": "CH", "expectedStatus": "200"},
+ { "phoneNumber": "011 41 44 668 1800", "countryCode": "CH", "expectedStatus": "200"},
+ { "phoneNumber": "07911 123456", "countryCode": "GB", "expectedStatus": "200"},
+ {"phoneNumber": "919-555-1212", "countryCode": "US", "expectedStatus": "200"},
+ {"phoneNumber": "919.555.1212", "countryCode": "US", "expectedStatus": "200"},
+ {"phoneNumber": "919-555-12", "countryCode": "US", "expectedStatus": "400"}
+]
