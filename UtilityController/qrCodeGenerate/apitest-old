@@ -1,0 +1,24 @@
+#!/bin/bash
+
+apikey="9a076a3f74a0411a9ee3f1dbf0c68217"
+collection="90b5f278-73d0-4835-92a3-47ded01d5da9"
+autoenvironment="4837216-f704cfc5-a402-45f4-be46-2d965783f7c8"
+folder="qrcodeGenerate"
+data="qrcodeGenerate.csv"
+
+#echo "apikey = "$apikey
+#echo "collection = "$collection
+#echo "autoenvironment ="$autoenvironment
+#echo "folder ="$folder
+#echo "data ="$data
+
+apicall=https://api.getpostman.com/collections/$collection?apikey=$apikey
+envcall=https://api.getpostman.com/environments/$autoenvironment?apikey=$apikey
+
+#echo "apicall = "$apicall
+#echo "envcall = "$envcall
+
+newmancmd="newman run $apicall --environment $envcall --folder $folder -d $data"
+
+echo $newmancmd
+$newmancmd

@@ -1,1 +1,7 @@
-to be replaced
+#!/bin/bash
+
+environment=$1
+folder=""
+data=".csv"
+
+../../createAndDoNewmanAPICall $folder $data $1

@@ -1,0 +1,32 @@
+#!/bin/bash
+
+folder=$1
+data=$2
+env=$3
+
+if [ "$env" = prod ]; then
+  environment="needToGetProdUUID"
+elif [ "$env" = stage ]; then
+  environment="needToGetStageUUID"
+else
+  environment="4837216-f704cfc5-a402-45f4-be46-2d965783f7c8"
+fi
+
+#echo "environment ="$environment
+#echo "folder ="$folder
+#echo "data ="$data
+
+apikey="9a076a3f74a0411a9ee3f1dbf0c68217"
+collection="90b5f278-73d0-4835-92a3-47ded01d5da9"
+apicall=https://api.getpostman.com/collections/$collection?apikey=$apikey
+envcall=https://api.getpostman.com/environments/$environment?apikey=$apikey
+
+#echo "apikey = "$apikey
+#echo "collection = "$collection
+#echo "apicall = "$apicall
+#echo "envcall = "$envcall
+
+newmancmd="newman run $apicall --environment $envcall --folder $folder -d $data"
+
+echo $newmancmd
+$newmancmd
