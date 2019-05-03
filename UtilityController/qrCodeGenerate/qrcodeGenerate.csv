@@ -1,3 +1,4 @@
-phoneNumber,countryCode,expectedStatus
-O44 668 18 00,CH,200
-+41 44 668 18 00,CH,200
+text,expectedStatus
+foo,200
+    ,400
+thisisaverylongstringtoseeifstringlengthmattersornotiamnotsurehowlongitisbutnowisthetimeforallgoodmenandwomentotryandbreakthesystem,200
