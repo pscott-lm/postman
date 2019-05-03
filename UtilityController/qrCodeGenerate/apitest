@@ -4,4 +4,4 @@ environment=$1
 folder="qrcodeGenerate"
 data="qrcodeGenerate.csv"
 
-../../createAndDoNewmanAPICall $folder $data $1
+../../createAndDoNewmanAPICall $folder $data $environment
