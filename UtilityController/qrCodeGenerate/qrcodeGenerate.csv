@@ -1,0 +1,3 @@
+phoneNumber,countryCode,expectedStatus
+O44 668 18 00,CH,200
++41 44 668 18 00,CH,200
