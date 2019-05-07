@@ -5,9 +5,9 @@ data=$2
 env=$3
 
 if [ "$env" = prod ]; then
-  environment="needToGetProdUUID"
+  environment="4837216-b7fd24fe-fad4-463d-96df-b236828bcac5"
 elif [ "$env" = stage ]; then
-  environment="needToGetStageUUID"
+  environment="4837216-6b556d75-43d3-447c-860b-218822c4a8c9"
 else
   environment="4837216-f704cfc5-a402-45f4-be46-2d965783f7c8"
 fi

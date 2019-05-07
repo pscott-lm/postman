@@ -1,7 +1,0 @@
-#!/bin/bash
-
-environment=$1
-folder=""
-data=".csv"
-
-../../createAndDoNewmanAPICall $folder $data $environment
